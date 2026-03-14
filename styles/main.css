@@ -11,8 +11,36 @@ main {
     align-items: center;
 }
 
+main div {
+    background-color: aqua;
+    border: 3px solid red;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: blue;
+}
+
 .digitalclock {
     display: flex;
     gap: 5px;
     font-size: 300%;
+}
+
+
+@media (max-width: 767px) {
+
+    .digitalclock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #colon1 {
+        display: none;
+    }
+
+    #colon2 {
+        display: none;
+    }
+
 }
